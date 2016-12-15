@@ -145,6 +145,17 @@
 		2671A6F81DFEA56D006D73E3 /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2671A6761DFEA56D006D73E3 /* libidn.a */; };
 		2671A6FA1DFEA59B006D73E3 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2671A6F91DFEA59B006D73E3 /* libxml2.tbd */; };
 		2671A6FC1DFEA5AC006D73E3 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2671A6FB1DFEA5AC006D73E3 /* libresolv.tbd */; };
+		2671A7011DFFD1B5006D73E3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2671A7001DFFD1B5006D73E3 /* Login.storyboard */; };
+		2671A7061DFFF44B006D73E3 /* WQOtherLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A7051DFFF44B006D73E3 /* WQOtherLoginController.m */; };
+		2671A7151DFFF694006D73E3 /* UIButton+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A70A1DFFF694006D73E3 /* UIButton+WF.m */; };
+		2671A7161DFFF694006D73E3 /* UIImage+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A70C1DFFF694006D73E3 /* UIImage+WF.m */; };
+		2671A7171DFFF694006D73E3 /* UIScreen+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A70E1DFFF694006D73E3 /* UIScreen+WF.m */; };
+		2671A7181DFFF694006D73E3 /* UIStoryboard+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A7101DFFF694006D73E3 /* UIStoryboard+WF.m */; };
+		2671A7191DFFF694006D73E3 /* UITextField+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A7121DFFF694006D73E3 /* UITextField+WF.m */; };
+		2671A71A1DFFF694006D73E3 /* UIView+WF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A7141DFFF694006D73E3 /* UIView+WF.m */; };
+		2671A7221E011721006D73E3 /* MBProgressHUD+HM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A71E1E011721006D73E3 /* MBProgressHUD+HM.m */; };
+		2671A7231E011721006D73E3 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2671A71F1E011721006D73E3 /* MBProgressHUD.bundle */; };
+		2671A7241E011721006D73E3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A7211E011721006D73E3 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,8 +178,8 @@
 /* Begin PBXFileReference section */
 		2671A4F31DFEA4C7006D73E3 /* WechatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WechatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2671A4F71DFEA4C7006D73E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2671A4F91DFEA4C7006D73E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2671A4FA1DFEA4C7006D73E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2671A4F91DFEA4C7006D73E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		2671A4FA1DFEA4C7006D73E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
 		2671A4FC1DFEA4C7006D73E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2671A4FD1DFEA4C7006D73E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2671A5001DFEA4C8006D73E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -449,6 +460,27 @@
 		2671A6F91DFEA59B006D73E3 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		2671A6FB1DFEA5AC006D73E3 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		2671A6FD1DFEA684006D73E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2671A7001DFFD1B5006D73E3 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		2671A7041DFFF44B006D73E3 /* WQOtherLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQOtherLoginController.h; sourceTree = "<group>"; };
+		2671A7051DFFF44B006D73E3 /* WQOtherLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQOtherLoginController.m; sourceTree = "<group>"; };
+		2671A7081DFFF694006D73E3 /* CategoryWF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryWF.h; sourceTree = "<group>"; };
+		2671A7091DFFF694006D73E3 /* UIButton+WF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WF.h"; sourceTree = "<group>"; };
+		2671A70A1DFFF694006D73E3 /* UIButton+WF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WF.m"; sourceTree = "<group>"; };
+		2671A70B1DFFF694006D73E3 /* UIImage+WF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WF.h"; sourceTree = "<group>"; };
+		2671A70C1DFFF694006D73E3 /* UIImage+WF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WF.m"; sourceTree = "<group>"; };
+		2671A70D1DFFF694006D73E3 /* UIScreen+WF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+WF.h"; sourceTree = "<group>"; };
+		2671A70E1DFFF694006D73E3 /* UIScreen+WF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+WF.m"; sourceTree = "<group>"; };
+		2671A70F1DFFF694006D73E3 /* UIStoryboard+WF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+WF.h"; sourceTree = "<group>"; };
+		2671A7101DFFF694006D73E3 /* UIStoryboard+WF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+WF.m"; sourceTree = "<group>"; };
+		2671A7111DFFF694006D73E3 /* UITextField+WF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+WF.h"; sourceTree = "<group>"; };
+		2671A7121DFFF694006D73E3 /* UITextField+WF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+WF.m"; sourceTree = "<group>"; };
+		2671A7131DFFF694006D73E3 /* UIView+WF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WF.h"; sourceTree = "<group>"; };
+		2671A7141DFFF694006D73E3 /* UIView+WF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WF.m"; sourceTree = "<group>"; };
+		2671A71D1E011721006D73E3 /* MBProgressHUD+HM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HM.h"; sourceTree = "<group>"; };
+		2671A71E1E011721006D73E3 /* MBProgressHUD+HM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+HM.m"; sourceTree = "<group>"; };
+		2671A71F1E011721006D73E3 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		2671A7201E011721006D73E3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		2671A7211E011721006D73E3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -505,11 +537,8 @@
 			isa = PBXGroup;
 			children = (
 				2671A5291DFEA56D006D73E3 /* Classes */,
-				2671A4F91DFEA4C7006D73E3 /* AppDelegate.h */,
-				2671A4FA1DFEA4C7006D73E3 /* AppDelegate.m */,
 				2671A4FC1DFEA4C7006D73E3 /* ViewController.h */,
 				2671A4FD1DFEA4C7006D73E3 /* ViewController.m */,
-				2671A4FF1DFEA4C8006D73E3 /* Main.storyboard */,
 				2671A5021DFEA4C8006D73E3 /* Assets.xcassets */,
 				2671A5041DFEA4C8006D73E3 /* LaunchScreen.storyboard */,
 				2671A5071DFEA4C9006D73E3 /* Info.plist */,
@@ -548,6 +577,9 @@
 		2671A5291DFEA56D006D73E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2671A7021DFFD1BF006D73E3 /* Others */,
+				2671A6FF1DFFD16F006D73E3 /* Main */,
+				2671A6FE1DFFD158006D73E3 /* Login */,
 				2671A52A1DFEA56D006D73E3 /* Lib */,
 			);
 			path = Classes;
@@ -556,6 +588,8 @@
 		2671A52A1DFEA56D006D73E3 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				2671A71C1E011721006D73E3 /* MBProgessHUD */,
+				2671A7071DFFF694006D73E3 /* Category */,
 				2671A52B1DFEA56D006D73E3 /* XMPP */,
 			);
 			path = Lib;
@@ -1345,6 +1379,81 @@
 			path = libidn;
 			sourceTree = "<group>";
 		};
+		2671A6FE1DFFD158006D73E3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2671A7031DFFF3EF006D73E3 /* Controller */,
+				2671A7001DFFD1B5006D73E3 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2671A6FF1DFFD16F006D73E3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2671A71B1E00EF21006D73E3 /* Controller */,
+				2671A4FF1DFEA4C8006D73E3 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2671A7021DFFD1BF006D73E3 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				2671A4F91DFEA4C7006D73E3 /* AppDelegate.h */,
+				2671A4FA1DFEA4C7006D73E3 /* AppDelegate.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2671A7031DFFF3EF006D73E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2671A7041DFFF44B006D73E3 /* WQOtherLoginController.h */,
+				2671A7051DFFF44B006D73E3 /* WQOtherLoginController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2671A7071DFFF694006D73E3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2671A7081DFFF694006D73E3 /* CategoryWF.h */,
+				2671A7091DFFF694006D73E3 /* UIButton+WF.h */,
+				2671A70A1DFFF694006D73E3 /* UIButton+WF.m */,
+				2671A70B1DFFF694006D73E3 /* UIImage+WF.h */,
+				2671A70C1DFFF694006D73E3 /* UIImage+WF.m */,
+				2671A70D1DFFF694006D73E3 /* UIScreen+WF.h */,
+				2671A70E1DFFF694006D73E3 /* UIScreen+WF.m */,
+				2671A70F1DFFF694006D73E3 /* UIStoryboard+WF.h */,
+				2671A7101DFFF694006D73E3 /* UIStoryboard+WF.m */,
+				2671A7111DFFF694006D73E3 /* UITextField+WF.h */,
+				2671A7121DFFF694006D73E3 /* UITextField+WF.m */,
+				2671A7131DFFF694006D73E3 /* UIView+WF.h */,
+				2671A7141DFFF694006D73E3 /* UIView+WF.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2671A71B1E00EF21006D73E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2671A71C1E011721006D73E3 /* MBProgessHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2671A71D1E011721006D73E3 /* MBProgressHUD+HM.h */,
+				2671A71E1E011721006D73E3 /* MBProgressHUD+HM.m */,
+				2671A71F1E011721006D73E3 /* MBProgressHUD.bundle */,
+				2671A7201E011721006D73E3 /* MBProgressHUD.h */,
+				2671A7211E011721006D73E3 /* MBProgressHUD.m */,
+			);
+			path = MBProgessHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1407,6 +1516,7 @@
 		2671A4EB1DFEA4C7006D73E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WQ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "魏强";
 				TargetAttributes = {
@@ -1450,9 +1560,11 @@
 			files = (
 				2671A6F71DFEA56D006D73E3 /* build-libidn.sh in Resources */,
 				2671A5061DFEA4C8006D73E3 /* LaunchScreen.storyboard in Resources */,
+				2671A7011DFFD1B5006D73E3 /* Login.storyboard in Resources */,
 				2671A5031DFEA4C8006D73E3 /* Assets.xcassets in Resources */,
 				2671A6F21DFEA56D006D73E3 /* README.txt in Resources */,
 				2671A5011DFEA4C8006D73E3 /* Main.storyboard in Resources */,
+				2671A7231E011721006D73E3 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1484,6 +1596,7 @@
 				2671A6C61DFEA56D006D73E3 /* XMPPTransports.m in Sources */,
 				2671A6851DFEA56D006D73E3 /* XMPPJID.m in Sources */,
 				2671A6811DFEA56D006D73E3 /* NSNumber+XMPP.m in Sources */,
+				2671A7241E011721006D73E3 /* MBProgressHUD.m in Sources */,
 				2671A6D81DFEA56D006D73E3 /* XMPPAutoPing.m in Sources */,
 				2671A6CC1DFEA56D006D73E3 /* XMPPCapabilities.m in Sources */,
 				2671A68B1DFEA56D006D73E3 /* XMPPBandwidthMonitor.m in Sources */,
@@ -1512,6 +1625,7 @@
 				2671A68D1DFEA56D006D73E3 /* XMPPGoogleSharedStatus.m in Sources */,
 				2671A6A41DFEA56D006D73E3 /* XMPPRoomHybrid.xcdatamodeld in Sources */,
 				2671A6981DFEA56D006D73E3 /* XMPPRoster.m in Sources */,
+				2671A7181DFFF694006D73E3 /* UIStoryboard+WF.m in Sources */,
 				2671A6E71DFEA56D006D73E3 /* XMPPIDTracker.m in Sources */,
 				2671A6C21DFEA56D006D73E3 /* NSDate+XMPPDateTimeProfiles.m in Sources */,
 				2671A6F61DFEA56D006D73E3 /* DDXMLNode.m in Sources */,
@@ -1531,6 +1645,7 @@
 				2671A6EE1DFEA56D006D73E3 /* DDLog.m in Sources */,
 				2671A6F01DFEA56D006D73E3 /* ContextFilterLogFormatter.m in Sources */,
 				2671A6ED1DFEA56D006D73E3 /* DDFileLogger.m in Sources */,
+				2671A7151DFFF694006D73E3 /* UIButton+WF.m in Sources */,
 				2671A6E11DFEA56D006D73E3 /* XMPPMessage+XEP_0308.m in Sources */,
 				2671A69D1DFEA56D006D73E3 /* XMPPIQ+LastActivity.m in Sources */,
 				2671A6DC1DFEA56D006D73E3 /* NSXMLElement+XEP_0203.m in Sources */,
@@ -1545,10 +1660,13 @@
 				2671A6CA1DFEA56D006D73E3 /* XMPPCapsCoreDataStorageObject.m in Sources */,
 				2671A6E41DFEA56D006D73E3 /* DDList.m in Sources */,
 				2671A6F11DFEA56D006D73E3 /* DispatchQueueLogFormatter.m in Sources */,
+				2671A7191DFFF694006D73E3 /* UITextField+WF.m in Sources */,
 				2671A6881DFEA56D006D73E3 /* XMPPParser.m in Sources */,
+				2671A7171DFFF694006D73E3 /* UIScreen+WF.m in Sources */,
 				2671A68A1DFEA56D006D73E3 /* XMPPStream.m in Sources */,
 				2671A67D1DFEA56D006D73E3 /* XMPPPlainAuthentication.m in Sources */,
 				2671A6D91DFEA56D006D73E3 /* XMPPPing.m in Sources */,
+				2671A71A1DFFF694006D73E3 /* UIView+WF.m in Sources */,
 				2671A6DB1DFEA56D006D73E3 /* XMPPTime.m in Sources */,
 				2671A69F1DFEA56D006D73E3 /* XMPPPrivacy.m in Sources */,
 				2671A6CD1DFEA56D006D73E3 /* XMPPMessageArchiving.xcdatamodeld in Sources */,
@@ -1578,11 +1696,14 @@
 				2671A69C1DFEA56D006D73E3 /* XMPPJabberRPCModule.m in Sources */,
 				2671A6C31DFEA56D006D73E3 /* XMPPDateTimeProfiles.m in Sources */,
 				2671A6C11DFEA56D006D73E3 /* XMPPMessage+XEP_0066.m in Sources */,
+				2671A7221E011721006D73E3 /* MBProgressHUD+HM.m in Sources */,
 				2671A6841DFEA56D006D73E3 /* XMPPIQ.m in Sources */,
 				2671A6BD1DFEA56D006D73E3 /* XMPPIQ+XEP_0060.m in Sources */,
 				2671A6791DFEA56D006D73E3 /* XMPPAnonymousAuthentication.m in Sources */,
+				2671A7061DFFF44B006D73E3 /* WQOtherLoginController.m in Sources */,
 				2671A6EC1DFEA56D006D73E3 /* DDASLLogger.m in Sources */,
 				2671A6B31DFEA56D006D73E3 /* XMPPvCardTemp.m in Sources */,
+				2671A7161DFFF694006D73E3 /* UIImage+WF.m in Sources */,
 				2671A69A1DFEA56D006D73E3 /* XMPPIQ+JabberRPC.m in Sources */,
 				2671A6961DFEA56D006D73E3 /* XMPPRosterMemoryStorage.m in Sources */,
 				2671A6AD1DFEA56D006D73E3 /* XMPPRoom.m in Sources */,
@@ -1646,6 +1767,7 @@
 				2671A5001DFEA4C8006D73E3 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		2671A5041DFEA4C8006D73E3 /* LaunchScreen.storyboard */ = {
@@ -1852,6 +1974,7 @@
 				2671A5221DFEA4CB006D73E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2671A5231DFEA4CB006D73E3 /* Build configuration list for PBXNativeTarget "WechatDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -1860,6 +1983,7 @@
 				2671A5251DFEA4CB006D73E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2671A5261DFEA4CB006D73E3 /* Build configuration list for PBXNativeTarget "WechatDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -1868,6 +1992,7 @@
 				2671A5281DFEA4CB006D73E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
