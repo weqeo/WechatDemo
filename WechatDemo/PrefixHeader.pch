@@ -14,20 +14,11 @@
 #import <UIKit/UIKit.h>
 #import "CategoryWF.h"
 #import "MBProgressHUD+HM.h"
+#import "WQUserInfo.h"
+#import "WQXMPPTool.h"
 
 // 自定义Log
 #ifdef DEBUG
-
-
-
-
-
-
-
-
-
-
-
 
 #define WQLog(...) NSLog(@"%s %d \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
 

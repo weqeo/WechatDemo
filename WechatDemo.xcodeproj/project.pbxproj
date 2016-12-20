@@ -156,6 +156,10 @@
 		2671A7221E011721006D73E3 /* MBProgressHUD+HM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A71E1E011721006D73E3 /* MBProgressHUD+HM.m */; };
 		2671A7231E011721006D73E3 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2671A71F1E011721006D73E3 /* MBProgressHUD.bundle */; };
 		2671A7241E011721006D73E3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A7211E011721006D73E3 /* MBProgressHUD.m */; };
+		2671A72B1E078377006D73E3 /* WQUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A72A1E078377006D73E3 /* WQUserInfo.m */; };
+		2671A72E1E078652006D73E3 /* WQXMPPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A72D1E078652006D73E3 /* WQXMPPTool.m */; };
+		2671A7311E078E3F006D73E3 /* WQNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A7301E078E3F006D73E3 /* WQNavController.m */; };
+		2671A7341E08C637006D73E3 /* WQRegisgerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A7331E08C637006D73E3 /* WQRegisgerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -481,6 +485,15 @@
 		2671A71F1E011721006D73E3 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		2671A7201E011721006D73E3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		2671A7211E011721006D73E3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2671A7281E07833E006D73E3 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		2671A7291E078377006D73E3 /* WQUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQUserInfo.h; sourceTree = "<group>"; };
+		2671A72A1E078377006D73E3 /* WQUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQUserInfo.m; sourceTree = "<group>"; };
+		2671A72C1E078652006D73E3 /* WQXMPPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQXMPPTool.h; sourceTree = "<group>"; };
+		2671A72D1E078652006D73E3 /* WQXMPPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQXMPPTool.m; sourceTree = "<group>"; };
+		2671A72F1E078E3F006D73E3 /* WQNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQNavController.h; sourceTree = "<group>"; };
+		2671A7301E078E3F006D73E3 /* WQNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQNavController.m; sourceTree = "<group>"; };
+		2671A7321E08C637006D73E3 /* WQRegisgerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQRegisgerViewController.h; sourceTree = "<group>"; };
+		2671A7331E08C637006D73E3 /* WQRegisgerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQRegisgerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -577,6 +590,7 @@
 		2671A5291DFEA56D006D73E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2671A7251E0782C8006D73E3 /* Common */,
 				2671A7021DFFD1BF006D73E3 /* Others */,
 				2671A6FF1DFFD16F006D73E3 /* Main */,
 				2671A6FE1DFFD158006D73E3 /* Login */,
@@ -1411,6 +1425,8 @@
 			children = (
 				2671A7041DFFF44B006D73E3 /* WQOtherLoginController.h */,
 				2671A7051DFFF44B006D73E3 /* WQOtherLoginController.m */,
+				2671A7321E08C637006D73E3 /* WQRegisgerViewController.h */,
+				2671A7331E08C637006D73E3 /* WQRegisgerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1452,6 +1468,36 @@
 				2671A7211E011721006D73E3 /* MBProgressHUD.m */,
 			);
 			path = MBProgessHUD;
+			sourceTree = "<group>";
+		};
+		2671A7251E0782C8006D73E3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2671A7271E078318006D73E3 /* Controllers */,
+				2671A7261E0782FB006D73E3 /* Singleton */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2671A7261E0782FB006D73E3 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				2671A7281E07833E006D73E3 /* Singleton.h */,
+				2671A7291E078377006D73E3 /* WQUserInfo.h */,
+				2671A72A1E078377006D73E3 /* WQUserInfo.m */,
+				2671A72C1E078652006D73E3 /* WQXMPPTool.h */,
+				2671A72D1E078652006D73E3 /* WQXMPPTool.m */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		2671A7271E078318006D73E3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2671A72F1E078E3F006D73E3 /* WQNavController.h */,
+				2671A7301E078E3F006D73E3 /* WQNavController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1602,6 +1648,7 @@
 				2671A68B1DFEA56D006D73E3 /* XMPPBandwidthMonitor.m in Sources */,
 				2671A6971DFEA56D006D73E3 /* XMPPUserMemoryStorageObject.m in Sources */,
 				2671A6D61DFEA56D006D73E3 /* XMPPMessageDeliveryReceipts.m in Sources */,
+				2671A7311E078E3F006D73E3 /* WQNavController.m in Sources */,
 				2671A6801DFEA56D006D73E3 /* NSData+XMPP.m in Sources */,
 				2671A6901DFEA56D006D73E3 /* XMPPGroupCoreDataStorageObject.m in Sources */,
 				2671A6D01DFEA56D006D73E3 /* XMPPMessageArchivingCoreDataStorage.m in Sources */,
@@ -1611,6 +1658,7 @@
 				2671A69B1DFEA56D006D73E3 /* XMPPIQ+JabberRPCResonse.m in Sources */,
 				2671A67B1DFEA56D006D73E3 /* XMPPDeprecatedPlainAuthentication.m in Sources */,
 				2671A6F51DFEA56D006D73E3 /* DDXMLElement.m in Sources */,
+				2671A72E1E078652006D73E3 /* WQXMPPTool.m in Sources */,
 				2671A6D21DFEA56D006D73E3 /* XMPPvCardAvatarModule.m in Sources */,
 				2671A6B01DFEA56D006D73E3 /* XMPPvCardCoreDataStorage.m in Sources */,
 				2671A6AA1DFEA56D006D73E3 /* XMPPRoomOccupantMemoryStorageObject.m in Sources */,
@@ -1651,6 +1699,7 @@
 				2671A6DC1DFEA56D006D73E3 /* NSXMLElement+XEP_0203.m in Sources */,
 				2671A6A91DFEA56D006D73E3 /* XMPPRoomMessageMemoryStorageObject.m in Sources */,
 				2671A6DF1DFEA56D006D73E3 /* XMPPMessage+XEP_0224.m in Sources */,
+				2671A7341E08C637006D73E3 /* WQRegisgerViewController.m in Sources */,
 				2671A67A1DFEA56D006D73E3 /* XMPPDeprecatedDigestAuthentication.m in Sources */,
 				2671A6D31DFEA56D006D73E3 /* XMPPMessage+XEP_0172.m in Sources */,
 				2671A6BA1DFEA56D006D73E3 /* XMPPvCardTempTel.m in Sources */,
@@ -1685,6 +1734,7 @@
 				2671A68C1DFEA56D006D73E3 /* XMPPCoreDataStorage.m in Sources */,
 				2671A67F1DFEA56D006D73E3 /* XMPPXOAuth2Google.m in Sources */,
 				2671A6821DFEA56D006D73E3 /* NSXMLElement+XMPP.m in Sources */,
+				2671A72B1E078377006D73E3 /* WQUserInfo.m in Sources */,
 				2671A6F41DFEA56D006D73E3 /* DDXMLDocument.m in Sources */,
 				2671A6E21DFEA56D006D73E3 /* XMPPMessage+XEP_0333.m in Sources */,
 				2671A6B91DFEA56D006D73E3 /* XMPPvCardTempModule.m in Sources */,

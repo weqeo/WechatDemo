@@ -4,7 +4,7 @@
 //
 //  Created by 魏强 on 16/12/13.
 //  Copyright © 2016年 魏强. All rights reserved.
-//
+//  /Users/MarkWei/Library/Developer/Xcode/UserData/CodeSnippets
 
 #import "WQOtherLoginController.h"
 #import "AppDelegate.h"
