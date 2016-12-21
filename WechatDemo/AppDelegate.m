@@ -10,6 +10,7 @@
 #import "XMPPFramework.h"
 #import "DDLog.h"
 #import "DDTTYLogger.h"
+#import "WQNavController.h"
 /**
  *  在Appdelegate实现登陆
  
@@ -31,10 +32,21 @@
    //沙盒的路径
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     
-    WQLog(@"%@",path);
-    
     // 打开XMPP的日志
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
+    WQLog(@"%@",path);
+    // 设置导航栏背景
+    [WQNavController setupNavTheme];
+    [[WQUserInfo sharedWQUserInfo] loadUserInfoFromSanbox];
+    // 判断用户的登录状态，YES 直接来到主界面
+    if([WQUserInfo sharedWQUserInfo].loginStatus){
+        UIStoryboard *storayobard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.window.rootViewController = storayobard.instantiateInitialViewController;
+        
+        // 自动登录服务
+        [[WQXMPPTool sharedWQXMPPTool] xmppUserLogin:nil];
+    }
     
     return YES;
 }

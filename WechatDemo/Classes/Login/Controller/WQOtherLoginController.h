@@ -6,8 +6,8 @@
 //  Copyright © 2016年 魏强. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WQBaseLoginController.h"
 
-@interface WQOtherLoginController : UIViewController
+@interface WQOtherLoginController : WQBaseLoginController
 
 @end

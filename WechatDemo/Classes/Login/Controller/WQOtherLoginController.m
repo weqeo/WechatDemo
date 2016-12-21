@@ -26,6 +26,7 @@
 #pragma mark - 生命周期区
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"其它方式登录";
     // 判断当前设备的类型，改变左右两边约束的距离
     if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
         self.containView_cons_left.constant = 10;
@@ -40,40 +41,28 @@
      *  1.把用户名和密码放在沙盒
         2.调用AppDelegate的一个connect连接服务并登录
      */
-    NSString *user = self.userTf.text;
-    NSString *pwd = self.pwdTf.text;
-    [[NSUserDefaults standardUserDefaults] setObject:user forKey:@"user"];
-    [[NSUserDefaults standardUserDefaults] setObject:pwd forKey:@"pwd"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    AppDelegate *app =  [UIApplication sharedApplication].delegate;
-    [MBProgressHUD showMessage:@"正在登录……"];
-    __weak typeof (self) selfVc = self;
-    [app login:^(XMPPResultType type) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [MBProgressHUD hideHUD];
-            switch (type) {
-                case XMPPResultTypeLoginSuccess:{
-                    [self dismissViewControllerAnimated:YES completion:nil];
-                    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-                    selfVc.view.window.rootViewController = sb.instantiateInitialViewController;
-                    break;
-                }
-                case XMPPResultTypeLoginFailure:
-                    [MBProgressHUD showError:@"账号或密码错误！"];
-//                }
-                    break;
-                case XMPPResultTypeNetworkErr:
-                    [MBProgressHUD showError:@"网络不给力！"];
-                    break;
-                default:
-                    break;
-            }
-        });
-        
-    }];
+    // 登录
+    
+    /*
+     * 官方的登录实现
+     
+     * 1.把用户名和密码放在WCUserInfo的单例
+     
+     
+     * 2.调用 AppDelegate的一个login 连接服务并登录
+     */
+    
+    WQUserInfo *userInfo = [WQUserInfo sharedWQUserInfo];
+    userInfo.user = self.userTf.text;
+    userInfo.pwd = self.pwdTf.text;
+    
+    [super login];
     
 }
-
+- (IBAction)cancel:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 #pragma mark - 网络请求区
 
 #pragma mark - 通知接收区

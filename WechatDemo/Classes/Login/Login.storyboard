@@ -25,7 +25,7 @@
         <!--登录-->
         <scene sceneID="bhg-5s-mRm">
             <objects>
-                <viewController id="O1y-Pb-61Y" sceneMemberID="viewController">
+                <viewController id="O1y-Pb-61Y" customClass="WQLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rsf-8M-vAG"/>
                         <viewControllerLayoutGuide type="bottom" id="1hh-bL-7Fx"/>
@@ -63,8 +63,11 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3U-XO-VZv">
-                                        <rect key="frame" x="117" y="129" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="125" y="129" width="30" height="30"/>
+                                        <state key="normal" title="登录"/>
+                                        <connections>
+                                            <action selector="loginBtnClick:" destination="O1y-Pb-61Y" eventType="touchUpInside" id="Tak-3d-gm9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNY-6J-9kI">
                                         <rect key="frame" x="46" y="164" width="30" height="30"/>
@@ -94,6 +97,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="登录" id="Qyf-5L-PDD"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="z3U-XO-VZv" id="GsQ-ih-cuo"/>
+                        <outlet property="pwdField" destination="9TS-uN-mRJ" id="ki8-uJ-hZn"/>
+                        <outlet property="userLabel" destination="SpF-00-qjU" id="e5n-dT-Z1c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJU-3m-WuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -287,7 +295,18 @@
                             <constraint firstItem="9Ik-rV-Pnt" firstAttribute="leading" secondItem="jLJ-ch-tBt" secondAttribute="leading" constant="80" id="V6c-Yf-1nI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="46k-5Z-e1Y"/>
+                    <navigationItem key="navigationItem" id="46k-5Z-e1Y">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="NhG-9e-lYH">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mHr-6D-VP6">
+                                <rect key="frame" x="20" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="取消"/>
+                                <connections>
+                                    <action selector="cancel:" destination="xUR-aN-iyc" eventType="touchUpInside" id="wNj-go-M7X"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="containView_cons_left" destination="V6c-Yf-1nI" id="5s0-Ir-hZV"/>
                         <outlet property="containView_cons_right" destination="G04-sC-RJs" id="xg4-RN-pcL"/>
