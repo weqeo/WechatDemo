@@ -10,7 +10,7 @@
 #define UserKey @"user"
 #define LoginStatusKey @"LoginStatus"
 #define PwdKey @"pwd"
-static NSString *domain = @"teacher.local";
+
 @implementation WQUserInfo
 singleton_implementation(WQUserInfo)
 - (void)saveUserInfoToSanbox{

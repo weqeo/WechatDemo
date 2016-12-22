@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Singleton.h"
+static NSString *domain = @"weqeodeimac.local";
 @interface WQUserInfo : NSObject
 singleton_interface(WQUserInfo);
 @property (nonatomic, copy) NSString *user;//用户名

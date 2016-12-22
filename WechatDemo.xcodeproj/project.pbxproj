@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261FC1FF1E0B7962007DFDEB /* WQContactAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261FC1FE1E0B7962007DFDEB /* WQContactAddController.m */; };
 		2671A4F81DFEA4C7006D73E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A4F71DFEA4C7006D73E3 /* main.m */; };
 		2671A4FB1DFEA4C7006D73E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A4FA1DFEA4C7006D73E3 /* AppDelegate.m */; };
 		2671A4FE1DFEA4C7006D73E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671A4FD1DFEA4C7006D73E3 /* ViewController.m */; };
@@ -186,6 +187,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		261FC1FD1E0B7962007DFDEB /* WQContactAddController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQContactAddController.h; sourceTree = "<group>"; };
+		261FC1FE1E0B7962007DFDEB /* WQContactAddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQContactAddController.m; sourceTree = "<group>"; };
 		2671A4F31DFEA4C7006D73E3 /* WechatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WechatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2671A4F71DFEA4C7006D73E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2671A4F91DFEA4C7006D73E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -1484,6 +1487,8 @@
 				2671A7401E08D28E006D73E3 /* WCEditProfileViewController.m */,
 				2671A7411E08D28E006D73E3 /* WCContactsViewController.h */,
 				2671A7421E08D28E006D73E3 /* WCContactsViewController.m */,
+				261FC1FD1E0B7962007DFDEB /* WQContactAddController.h */,
+				261FC1FE1E0B7962007DFDEB /* WQContactAddController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1681,6 +1686,7 @@
 				2671A7311E078E3F006D73E3 /* WQNavController.m in Sources */,
 				2671A6801DFEA56D006D73E3 /* NSData+XMPP.m in Sources */,
 				2671A6901DFEA56D006D73E3 /* XMPPGroupCoreDataStorageObject.m in Sources */,
+				261FC1FF1E0B7962007DFDEB /* WQContactAddController.m in Sources */,
 				2671A6D01DFEA56D006D73E3 /* XMPPMessageArchivingCoreDataStorage.m in Sources */,
 				2671A6A71DFEA56D006D73E3 /* XMPPRoomOccupantHybridMemoryStorageObject.m in Sources */,
 				2671A6BE1DFEA56D006D73E3 /* XMPPPubSub.m in Sources */,

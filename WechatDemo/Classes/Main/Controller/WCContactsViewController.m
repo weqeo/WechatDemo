@@ -126,4 +126,15 @@
     return cell;
 }
 
+/**
+ *  左滑删除
+ */
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        WQLog(@"删除好友");
+        XMPPUserCoreDataStorageObject *friend = _resultsContrl.fetchedObjects[indexPath.row];
+        XMPPJID *friendJid = friend.jid;
+        [[WQXMPPTool sharedWQXMPPTool].roster removeUser:friendJid];
+    }
+}
 @end

@@ -23,9 +23,12 @@ singleton_interface(WQXMPPTool);
 /**  电子名片 */
 @property (nonatomic, strong) XMPPvCardTempModule *vCard;
 
+@property (nonatomic, strong)XMPPStream *xmppStream;
+
 /**  花名册的数据存储 */
 @property (nonatomic, strong) XMPPRosterCoreDataStorage *rosterStorage;
-
+/**  花名册模块 */
+@property (nonatomic, strong) XMPPRoster *roster;
 /**
  *  注册标识 YES 注册 / NO 登录
  */

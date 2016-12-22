@@ -8,7 +8,7 @@
 
 #import "WQXMPPTool.h"
 @interface WQXMPPTool ()<XMPPStreamDelegate>{
-    XMPPStream *_xmppStream;
+//    XMPPStream *_xmppStream;
     XMPPResultBlock _resultBlock;
     XMPPReconnect *_reconnect;// 自动连接模块
     XMPPvCardCoreDataStorage *_vCardStorage;//电子名片的数据存储
